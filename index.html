@@ -5,11 +5,265 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Dashboard Project</title>
 </head>
 
 <body>
     <script src="app.js" defer></script>
+
+    <div class="page__container">
+        <!-- HEADER  -->
+        <header class="header">
+            <div class="header__search">
+                <img src="assets/search_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="search icon"
+                    class="search__icon">
+                <label for="search">
+                    <input type="text" id="search" name="search_input">
+                </label>
+            </div>
+            <div class="header__header-nav">
+                <img class="header-nav__notifications"
+                    src="assets/notifications_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" width="24px" height="24px"
+                    alt="notifications">
+                <img class='header-nav__user-logo' src="assets/user.webp" width="30px" height="30px" alt="user logo">
+                <p class="header-nav__user-name">Morgan Oakley</p>
+            </div>
+            <div class="header__header-menu">
+                <div class="header-menu__user">
+
+                    <div class="user__user-container">
+                        <img class="user__logo" src="assets/user.webp" width="30px" height="30px" alt="user logo">
+                        <p class="user__greeting">Hi there,</p>
+                        <p class="user-container__name">Morgan Oakley</p>
+                        <p class="user-container__nick">(@morgan)</p>
+                    </div>
+                    <div class="header-menu__menu-buttons">
+                        <button class="menu-buttons__button">New</button>
+                        <button class="menu-buttons__button">Upload</button>
+                        <button class="menu-buttons__button">Share</button>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SIDEBAR  -->
+        <section class="sidebar">
+            <div class="sidebar__sidebar-header">
+                <svg class='sidebar-header__logo' xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="">
+                    <path
+                        d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+                </svg>
+                <a href="index.html" class="sidebar-header__title">Dashboard</a>
+            </div>
+            <div class="sidebar__sidebar-nav">
+                <nav class="sidebar-nav__nav">
+                    <div class="nav__nav-section">
+                        <ul class="nav-section__list">
+                            <li class="nav-section__item"><img
+                                    src="assets/home_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">Home</li>
+                            <li class="nav-section__item"><img
+                                    src="assets/person_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">Profile</li>
+                            <li class="nav-section__item"><img
+                                    src="assets/sms_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">Messages</li>
+                            <li class="nav-section__item"><img
+                                    src="assets/schedule_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">History</li>
+                            <li class="nav-section__item"><img
+                                    src="assets/task_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">Tasks</li>
+                            <li class="nav-section__item"><img
+                                    src="assets/communities_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">Communities</li>
+                        </ul>
+                    </div>
+                    <div class="nav__nav-section">
+                        <ul class="nav-section__list">
+                            <li class="nav-section__item"><img
+                                    src="assets/settings_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">Settings</li>
+                            <li class="nav-section__item"><img
+                                    src="assets/help_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">Support</li>
+                            <li class="nav-section__item"><img
+                                    src="assets/verified_user_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt="nav-icon"
+                                    class="nav-section-item__image">Privacy</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <main class="main">
+            <div class="main__cards">
+                <h2 class="cards__heading">Your Projects</h2>
+                <ul class="cards__list">
+                    <li class="cards__item">
+                        <div class="card">
+                            <h2 class="card__title">Super Cool Project</h2>
+                            <p class="card__text">Sed tempus ut lacus ut scelerisque.
+                                Suspendisse sollicitudin nibh erat, id facilisis felis accumsan</p>
+                            <div class="card__icons">
+                                <img src="assets/star_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/visibility_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/share_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="cards__item">
+                        <div class="card">
+                            <h2 class="card__title">Super Cool Project</h2>
+                            <p class="card__text">Sed tempus ut lacus ut scelerisque.
+                                Suspendisse sollicitudin nibh erat, id facilisis felis accumsan</p>
+                            <div class="card__icons">
+                                <img src="assets/star_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/visibility_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/share_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="cards__item">
+                        <div class="card">
+                            <h2 class="card__title">Super Cool Project</h2>
+                            <p class="card__text">Sed tempus ut lacus ut scelerisque.
+                                Suspendisse sollicitudin nibh erat, id facilisis felis accumsan</p>
+                            <div class="card__icons">
+                                <img src="assets/star_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/visibility_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/share_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="cards__item">
+                        <div class="card">
+                            <h2 class="card__title">Super Cool Project</h2>
+                            <p class="card__text">Sed tempus ut lacus ut scelerisque.
+                                Suspendisse sollicitudin nibh erat, id facilisis felis accumsan</p>
+                            <div class="card__icons">
+                                <img src="assets/star_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/visibility_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/share_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="cards__item">
+                        <div class="card">
+                            <h2 class="card__title">Super Cool Project</h2>
+                            <p class="card__text">Sed tempus ut lacus ut scelerisque.
+                                Suspendisse sollicitudin nibh erat, id facilisis felis accumsan</p>
+                            <div class="card__icons">
+                                <img src="assets/star_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/visibility_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                                <img src="assets/share_24dp_EFF6FF_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                    class="icons__icon">
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="main__announcements">
+                <h2 class="announcements__heading">Announcements</h2>
+                <ul class="announcements__list">
+                    <li class="announcements__item">
+                        <div class="announcement">
+                            <h2 class="announcement__title">Site Maintenance</h2>
+                            <p class="announcement__text">Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                                ac. Donec hendrerit sodales congue.</p>
+                        </div>
+                    </li>
+                    <li class="announcements__item">
+                        <div class="announcement">
+                            <h2 class="announcement__title">Community Share Day</h2>
+                            <p class="announcement__text">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                                Aliquam dictum accumsan</p>
+                        </div>
+                    </li>
+                    <li class="announcements__item">
+                        <div class="announcement">
+                            <h2 class="announcement__title">Updated Privacy Policy</h2>
+                            <p class="announcement__text">Phasellus efficitur nisi eget elit consectetur, eget
+                                condimentum ante auctor. Cras fringilla sagittis sem in mattis</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__trending">
+                <h2 class="trending__heading">Trending</h2>
+                <ul class="trending__list">
+                    <li class="trending__item">
+                        <div class="trend">
+                            <img src="assets/profilePicture.avif" alt="" class="trend__logo">
+                            <div class="trend__wrapper">
+                                <p class="trend__nick">@tegan</p>
+                                <p class="trend__description">World Peace Builder</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trending__item">
+                        <div class="trend">
+                            <img src="assets/profilePicture.avif" alt="" class="trend__logo">
+                            <div class="trend__wrapper">
+                                <p class="trend__nick">@tegan</p>
+                                <p class="trend__description">World Peace Builder</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trending__item">
+                        <div class="trend">
+                            <img src="assets/profilePicture.avif" alt="" class="trend__logo">
+                            <div class="trend__wrapper">
+                                <p class="trend__nick">@tegan</p>
+                                <p class="trend__description">World Peace Builder</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trending__item">
+                        <div class="trend">
+                            <img src="assets/profilePicture.avif" alt="" class="trend__logo">
+                            <div class="trend__wrapper">
+                                <p class="trend__nick">@tegan</p>
+                                <p class="trend__description">World Peace Builder</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </main>
+    </div>
+
+
+
+
 </body>
 
 </html>
